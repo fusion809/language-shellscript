@@ -4,7 +4,7 @@
   "author": "GitHub, Inc.",
   "contributor": "Brenton Horne <brentonhorne77@gmail.com>",
   "readme": "./README.md",
-  "description": "Shell script language support in Atom",
+  "description": "Shell script language support in Atom. Fork of language-shellscript, with support for common Unix commands. Designed to be used with the dark-bint-syntax theme.",
   "engines": {
     "atom": "*",
     "node": "*"
