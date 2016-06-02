@@ -1,15 +1,15 @@
 {
-  "name": "language-shellscript2",
+  "name": "language-unix-shell",
   "version": "0.22.3",
   "author": "GitHub, Inc.",
   "contributor": "Brenton Horne <brentonhorne77@gmail.com>",
   "readme": "./README.md",
-  "description": "Shell script language support in Atom. Fork of language-shellscript, with support for common Unix commands. Designed to be used with the dark-bint-syntax theme.",
+  "description": "Shell script language support in Atom. Fork of language-shellscript, with extra support for common Unix commands. Designed to be used with the dark-bint-syntax theme.",
   "engines": {
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.io/language-shellscript2",
+  "homepage": "http://atom.io/language-unix-shell",
   "repository": {
     "type": "git",
     "url": "https://github.com/fusion809/language-shellscript.git"
