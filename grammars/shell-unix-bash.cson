@@ -1024,7 +1024,7 @@
         'name':  'support.function.extras.shell'
       }
       {
-        'match': '(?<![-/./=/])\\b(?:bzr|cvs|git|hg|svn)\\b(?![-/./=/+/])'
+        'match': '(?<![-/./=/@/])\\b(?:bzr|cvs|git|hg|svn)\\b(?![-/./=/+/@/])'
         'name':  'support.function.vcs.shell'
       }
       {
