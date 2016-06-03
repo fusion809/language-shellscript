@@ -2,12 +2,18 @@
   "name": "language-unix-shell",
   "version": "0.25.0",
   "author": "GitHub, Inc.",
+  "main": "lib/main.coffee",
   "contributor": "Brenton Horne <brentonhorne77@gmail.com>",
   "readme": "./README.md",
   "description": "Shell script language support in Atom. Fork of language-shellscript, with extra support for common Unix commands. Designed to be used with the dark-bint-syntax theme.",
   "engines": {
     "atom": "*",
     "node": "*"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "lib-ass": "0.0.6",
+    "season": "^5.3"
   },
   "homepage": "http://atom.io/language-unix-shell",
   "repository": {
