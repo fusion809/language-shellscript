@@ -1008,23 +1008,23 @@
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./])\\b(?:alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\\b(?![-/=/])'
+        'match': '(?<![-/./=/])\\b(?:alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\\b(?![-/=/])'
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./])\\b(?:apm|apt|apt-get|apt-cache|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|bundle|composer|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|emerge|equery|equo|explodepkg|gem|installpkg|lein|makepkg|npm|osc|pacman|pkg|pkg_add|pip|pip3|pkgtool|removepkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slapt-get|updpkgsums|upgradepkg|urpme|urpmf|urpmi|urpmi.update|urpmq|yum|zypper)\\b(?![-/=/])'
+        'match': '(?<![-/./=/])\\b(?:apm|apt|apt-get|apt-cache|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|bundle|composer|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|emerge|equery|equo|explodepkg|gem|installpkg|lein|makepkg|npm|osc|pacman|pkg|pkg_add|pip|pip3|pkgtool|removepkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slapt-get|updpkgsums|upgradepkg|urpme|urpmf|urpmi|urpmi.update|urpmq|yum|zypper)\\b(?![-/=/])'
         'name': 'support.function.packages.shell'
       }
       {
-        'match': '(?<![-/./])\\b(?:base32|base64|basename|cat|chcon|chgrp|chmod|chown|chroot|cksum|comm|cp|csplit|cut|date|dd|df|dir|dircolors|dirname|du|echo|env|expand|expr|factor|false|fmt|fold|head|hostid|id|install|join|link|ln|logname|ls|md5sum|mkdir|mkfifo|mknod|mktemp|mv|nice|nl|nohup|nproc|numfmt|od|paste|pathchk|pinky|pr|printenv|printf|ptx|pwd|readlink|realpath|rm|rmdir|runcon|seq|sha1sum|sha224sum|sha256sum|sha384sum|sha512sum|shred|shuf|sleep|sort|split|stat|stdbuf|stty|sum|sync|tac|tail|tee|test|timeout|touch|tr|true|truncate|tsort|tty|uname|unexpand|uniq|unlink|users|vdir|wc|who|whoami|yes)\\b(?![-/=/])'
+        'match': '(?<![-/./=/])\\b(?:base32|base64|basename|cat|chcon|chgrp|chmod|chown|chroot|cksum|comm|cp|csplit|cut|date|dd|df|dir|dircolors|dirname|du|echo|env|expand|expr|factor|false|fmt|fold|head|hostid|id|install|join|link|ln|logname|ls|md5sum|mkdir|mkfifo|mknod|mktemp|mv|nice|nl|nohup|nproc|numfmt|od|paste|pathchk|pinky|pr|printenv|printf|ptx|pwd|readlink|realpath|rm|rmdir|runcon|seq|sha1sum|sha224sum|sha256sum|sha384sum|sha512sum|shred|shuf|sleep|sort|split|stat|stdbuf|stty|sum|sync|tac|tail|tee|test|timeout|touch|tr|true|truncate|tsort|tty|uname|unexpand|uniq|unlink|users|vdir|wc|who|whoami|yes)\\b(?![-/=/])'
         'name': 'support.function.coreutils.shell'
       }
       {
-        'match': '(?<![-/./])\\b(?:awk|curl|ed|grep|nano|sed|sudo|vi|vim|wget)\\b(?![-/./=/])'
+        'match': '(?<![-/./=/])\\b(?:awk|curl|ed|grep|nano|sed|sudo|vi|vim|wget)\\b(?![-/./=/])'
         'name':  'support.function.extras.shell'
       }
       {
-        'match': '(?<![-/./])\\b(?:bzr|cvs|git|hg|svn)\\b(?![-/./=/+/])'
+        'match': '(?<![-/./=/])\\b(?:bzr|cvs|git|hg|svn)\\b(?![-/./=/+/])'
         'name':  'support.function.vcs.shell'
       }
       {
