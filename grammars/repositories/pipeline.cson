@@ -1,0 +1,11 @@
+key: 'pipeline'
+patterns: [
+  {
+    'match': '\\b(time)\\b'
+    'name': 'keyword.other.shell'
+  }
+  {
+    'match': '[|!]'
+    'name': 'keyword.operator.pipe.shell'
+  }
+]

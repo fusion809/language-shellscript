@@ -1,0 +1,88 @@
+name: 'Unix Shell'
+scopeName: 'source.shell'
+fileTypes: [
+  'sh'
+  'bash'
+  'ksh'
+  'zsh'
+  'zsh-theme'
+  'zshenv'
+  'zlogin'
+  'zlogout'
+  'zprofile'
+  'zshrc'
+  'bashrc'
+  'bash_profile'
+  'bash_login'
+  'profile'
+  'bash_logout'
+  '.textmate_init'
+  'npmrc'
+  'PKGBUILD'
+  'install'
+  'cygport'
+  'bats'
+  'ebuild'
+]
+
+patterns: [
+  { include: '#repository' }
+]
+
+repository:
+  patterns: [
+    {
+      include: '#case-clause'
+    }
+    {
+      include: '#comment'
+    }
+    {
+      include: '#compound-command'
+    }
+    {
+      include: '#function-definition'
+    }
+    {
+      include: '#heredoc'
+    }
+    {
+      include: '#herestring'
+    }
+    {
+      include: '#interpolation'
+    }
+    {
+      include: '#keyword'
+    }
+    {
+      include: '#list'
+    }
+    {
+      include: '#logical-expression'
+    }
+    {
+      include: '#loop'
+    }
+    {
+      include: '#math'
+    }
+    {
+      include: '#pathname'
+    }
+    {
+      include: '#pipeline'
+    }
+    {
+      include: '#redirection'
+    }
+    {
+      include: '#string'
+    }
+    {
+      include: '#support'
+    }
+    {
+      include: '#variable'
+    }
+  ]

@@ -1,0 +1,29 @@
+key: 'pathname'
+patterns: [
+  {
+    'match': '(?<=\\s|:|=|^)~'
+    'name': 'keyword.operator.tilde.shell'
+  }
+  {
+    'match': '\\*|\\?'
+    'name': 'keyword.operator.glob.shell'
+  }
+  {
+    'begin': '([?*+@!])(\\()'
+    'beginCaptures':
+      '1':
+        'name': 'keyword.operator.extglob.shell'
+      '2':
+        'name': 'punctuation.definition.extglob.shell'
+    'end': '(\\))'
+    'endCaptures':
+      '1':
+        'name': 'punctuation.definition.extglob.shell'
+    'name': 'meta.structure.extglob.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+key: 'herestring'
+patterns: [
+  {
+    'begin': '(<<<)\s*((\'))'
+    'beginCaptures':
+      '1':
+        'name': 'keyword.operator.herestring.shell'
+      '2':
+        'name': 'string.quoted.single.shell'
+      '3':
+        'name': 'punctuation.definition.string.begin.shell'
+    'end': '(\')'
+    'endCaptures':
+      '0':
+        'name': 'string.quoted.single.shell'
+      '1':
+        'name': 'punctuation.definition.string.end.shell'
+    'name': 'meta.herestring.shell'
+    'contentName': 'string.quoted.single.shell'
+  }
+  {
+    'begin': '(<<<)\s*(("))'
+    'beginCaptures':
+      '1':
+        'name': 'keyword.operator.herestring.shell'
+      '2':
+        'name': 'string.quoted.double.shell'
+      '3':
+        'name': 'punctuation.definition.string.begin.shell'
+    'end': '(")'
+    'endCaptures':
+      '0':
+        'name': 'string.quoted.double.shell'
+      '1':
+        'name': 'punctuation.definition.string.end.shell'
+    'name': 'meta.herestring.shell'
+    'contentName': 'string.quoted.double.shell'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.operator.herestring.shell'
+      '2':
+        'name': 'string.unquoted.herestring.shell'
+    'match': '(<<<)(([^\\s\\\\]|\\\\.)+)'
+    'name': 'meta.herestring.shell'
+  }
+]

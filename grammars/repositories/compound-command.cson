@@ -1,0 +1,61 @@
+key: 'compound-command'
+patterns: [
+  {
+    'begin': '(\\[{1,2})'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.logical-expression.shell'
+    'end': '(\\]{1,2})'
+    'name': 'meta.scope.logical-expression.shell'
+    'patterns': [
+      {
+        'include': '#logical-expression'
+      }
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '(\\({2})'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.shell'
+    'end': '(\\){2})'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.shell'
+    'name': 'string.other.math.shell'
+    'patterns': [
+      {
+        'include': '#math'
+      }
+    ]
+  }
+  {
+    'begin': '(\\()'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.subshell.shell'
+    'end': '(\\))'
+    'name': 'meta.scope.subshell.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '(?<=\\s|^)(\\{)(?=\\s|$)'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.group.shell'
+    'end': '(?<=^|;)\\s*(\\})'
+    'name': 'meta.scope.group.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+]
