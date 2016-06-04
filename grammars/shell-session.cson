@@ -1,5 +1,5 @@
 'scopeName': 'text.shell-session'
-'name': 'Shell Session'
+'name': 'Unix Shell Session'
 'fileTypes': [
   'sh-session'
 ]
