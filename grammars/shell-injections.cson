@@ -25,7 +25,7 @@ patterns: [
     'name': 'support.function.coreutils.shell'
   }
   {
-    'match': '(?<![-/./\'/\"/=/])\\b(?:awk|curl|ed|grep|nano|sed|sudo|vi|vim|wget)\\b(?![-/./\'/\"/=/])'
+    'match': '(?<![-/./\'/\"/=/])\\b(?:awk|curl|ed|grep|nano|patch|sed|su|sudo|vi|vim|wget)\\b(?![-/./\'/\"/=/])'
     'name':  'support.function.extras.shell'
   }
   {
