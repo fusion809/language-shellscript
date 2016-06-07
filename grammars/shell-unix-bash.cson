@@ -1011,7 +1011,7 @@
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/])\\b(?:apm|apt|apt-get|apt-cache|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|aura|aurget|bauerbill|bundle|composer||cower|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|emerge|equery|equo|explodepkg|gem|installpkg|lein|makepkg|npm|osc|pacaur|packer|pacman|pbget|pkg|pkg_add|pip|pip3|pkgtool|removepkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slackpkg|slapt-get|updpkgsums|upgradepkg|urpme|urpmf|urpmi|urpmi.update|urpmq|yaourt|yum|zypper)\\b(?![-/\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/])\\b(?:apm|apt|apt-get|apt-cache|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|bundle|composer|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|emerge|equery|equo|explodepkg|gem|installpkg|lein|makepkg|npm|osc|pacman|pkg|pkg_add|pip|pip3|pkgtool|removepkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slackpkg|slapt-get|updpkgsums|upgradepkg|urpme|urpmf|urpmi|urpmi.update|urpmq|yaourt|yum|zypper)\\b(?![-/\'/\"/=/])'
         'name': 'support.function.packages.shell'
       }
       {
@@ -1019,7 +1019,7 @@
         'name': 'support.function.coreutils.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/])\\b(?:awk|curl|docker|ed|grep|mount|nano|patch|sed|su|sudo|umount|vi|vim|wget)\\b(?![-/./\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/])\\b(?:awk|curl|ed|grep|mount|nano|patch|sed|su|sudo|umount|vi|vim|wget)\\b(?![-/./\'/\"/=/])'
         'name':  'support.function.extras.shell'
       }
       {
