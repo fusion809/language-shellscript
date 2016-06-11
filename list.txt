@@ -1,0 +1,1 @@
+apm|apt|apt-cache|apt-fast|apt-get|aptitude|bundle|dnequo|gem|npm|pip[0-9]*|pkg|slapt-get|yum|zypper
