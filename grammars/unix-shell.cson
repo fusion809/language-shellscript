@@ -1019,8 +1019,28 @@
         'name': 'support.function.coreutils.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/])\\b(?:awk|bsdtar|curl|ed|gpasswd|grep|grub\-*|mkfs\.*|mkinitcpio|mkpasswd|mksquashfs|mount|nano|patch|sed|su|sudo|tar|umount|useradd|usermod|passwd|vi|vim|wget)\\b(?![-/./\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/])\\b(?:awk|grep|grub\-*|mount|patch|sed|su|sudo|umount)\\b(?![-/./\'/\"/=/])'
         'name':  'support.function.extras.shell'
+      }
+      {
+        'match': '(?<![-/./\'/\"/=/])\\b(?:ar|bsdtar|p7zip|tar|unzip)\\b(?![-/./\'/\"/=/])'
+        'name':  'support.function.archives.shell'
+      }
+      {
+        'match': '(?<![-/./\'/\"/=/])\\b(?:ed|emacs|nano|pico|vi|vim)\\b(?![-/./\'/\"/=/])'
+        'name':  'support.function.editors.shell'
+      }
+      {
+        'match': '(?<![-/./\'/\"/=/])\\b(?:chsh|gpasswd|mkpasswd|passwd|useradd|usermod)\\b(?![-/./\'/\"/=/])'
+        'name':  'support.function.users.shell'
+      }
+      {
+        'match': '(?<![-/./\'/\"/=/])\\b(?:mkfs\.*|mkinitcpio|mksquashfs)\\b(?![-/./\'/\"/=/])'
+        'name':  'support.function.fs.shell'
+      }
+      {
+        'match': '(?<![-/./\'/\"/=/])\\b(?:aria2c|curl|wget)\\b(?![-/./\'/\"/=/])'
+        'name':  'support.function.download.shell'
       }
       {
         'match': '(?<![-/./\'/\"/=/@/])\\b(?:bzr|cvs|git|hg|svn)\\b(?![-/./=/\'/\"/+/@/])'
