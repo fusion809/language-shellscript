@@ -1019,7 +1019,7 @@
         'name': 'support.function.coreutils.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/])\\b(?:./autogen.sh|./configure|awk|grep|grub\-*|make|mount|patch|sed|su|sudo|umount)\\b(?![-/./\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/])\\b(?:./configure|awk|grep|grub\-*|make|mount|patch|script/build|script/grunt|./*.sh|sed|su|sudo|umount)\\b(?![-/./\'/\"/=/])'
         'name':  'support.function.extras.shell'
       }
       {
