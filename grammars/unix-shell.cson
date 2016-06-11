@@ -287,7 +287,7 @@
             'name': 'entity.name.function.shell'
           '3':
             'name': 'punctuation.definition.arguments.shell'
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -307,7 +307,7 @@
             'name': 'support.function.options.shell'
           '3':
             'name': 'entity.name.function.shell'
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -325,7 +325,7 @@
             'name': 'entity.name.function.shell'
           '2':
             'name': 'punctuation.definition.arguments.shell'
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1023,7 +1023,7 @@
   'support':
     'patterns': [
       {
-        'match': ' -[a-zA-Z0-9]+'
+        'match': ' -[a-zA-Z0-9-]+'
         'name': 'support.function.options.shell'
       }
       {
@@ -1103,7 +1103,7 @@
             'name': 'support.function.options.shell'
           '5':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1119,7 +1119,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1133,7 +1133,7 @@
             'name': 'support.function.coreutils.shell'
           '3':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1149,7 +1149,7 @@
             'name': 'support.function.coreutils.shell'
           '4':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1161,7 +1161,7 @@
             'name': 'support.function.packages.shell'
           '2':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1175,7 +1175,7 @@
             'name': 'support.function.options.shell'
           '3':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1191,7 +1191,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1209,7 +1209,7 @@
             'name': 'support.function.options.shell'
           '5':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1223,7 +1223,7 @@
             'name': 'support.function.packages.shell'
           '3':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1237,7 +1237,7 @@
             'name': 'support.function.packages.shell'
           '3':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1253,7 +1253,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1271,7 +1271,7 @@
             'name': 'support.function.options.shell'
           '5':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1291,7 +1291,7 @@
             'name': 'support.function.options.shell'
           '6':
             'name': ''
-        'end': ';|&|$'
+        'end': '\||&|$'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
