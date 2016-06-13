@@ -1,6 +1,7 @@
 {CompositeDisposable, Directory} = require 'atom'
 CSON = require 'season'
 path = require 'path'
+notifications = atom.notifications
 fs = require 'fs'
 
 module.exports =
@@ -35,22 +36,6 @@ module.exports =
             grammar.repository[key] =
               patterns: patterns
 
-      # Compile and add fenced-code-blocks to repository
-      grammar.repository['fenced-code-blocks'] =
-        patterns: @_compileFencedCodeGrammar()
-
       # Write {grammar} to {filepath},
       # and reload window when complete
       filepath = path.join(__dirname, output)
-      CSON.writeFileSync filepath, grammar, do ->
-        atom.commands.dispatch 'body', 'window:reload'
-
-  # When provided with a valid {item} ({item.pattern} is required),
-  # missing {include} and/or {contentName} are generated.
-  _parseItem: (item) ->
-    if (typeof item is 'object') and item.pattern?
-      unless item.include then item.include = 'source.'+item.pattern
-      unless item.contentName then item.contentName = 'embedded.'+item.include
-      return item
-    else
-      return false
