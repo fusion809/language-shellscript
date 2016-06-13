@@ -1,0 +1,15 @@
+key: 'definition'
+patterns: [
+  {
+    'begin': '(?<![/$])([a-zA-Z0-9_-]+)(=)'
+    'beginCaptures':
+      '1':
+        'name': 'variable.definition.name'
+      '2':
+        'name': 'variable.definition.equal'
+    'end':  ';|&|$|'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+]

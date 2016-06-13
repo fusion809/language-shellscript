@@ -2,6 +2,7 @@
   "name": "language-unix-shell",
   "version": "0.31.3",
   "author": "GitHub, Inc.",
+  "main": "lib/main.coffee",
   "contributor": "Brenton Horne <brentonhorne77@gmail.com>",
   "readme": "./README.md",
   "description": "Shell script language support in Atom. Fork of language-shellscript, with extra support for common Unix commands. Designed to be used with the dark-bint-syntax theme.",
@@ -21,5 +22,10 @@
   "devDependencies": {
     "coffeelint": "^1.10.1",
     "coffee-script": "^1.8.0"
+  },
+  "dependencies": {
+  "lodash": "^3.10.1",
+  "lib-ass": "0.0.6",
+  "season": "^5.3"
   }
 }

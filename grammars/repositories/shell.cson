@@ -1,0 +1,44 @@
+name: 'Unix Shell'
+scopeName: 'source.shell'
+fileTypes: [
+  'sh'
+  'bash'
+  'ksh'
+  'zsh'
+  'zsh-theme'
+  'zshenv'
+  'zlogin'
+  'zlogout'
+  'zprofile'
+  'zshrc'
+  'bashrc'
+  'bash_profile'
+  'bash_login'
+  'profile'
+  'bash_logout'
+  '.textmate_init'
+  'npmrc'
+  'cygport'
+  'bats'
+  'ebuild'
+]
+
+# NOTE
+# Disabled this, because the value of a hundred is already the default value, and changing it doesn't seem to have any direct effect.
+# maxTokensPerLine: 100
+
+patterns: [
+  { include: '#support' }
+]
+
+repository:
+  support:
+    patterns: [
+      { include: '#archives' }
+      { include: '#coreutils' }
+      { include: '#extras' }
+    ]
+  variables:
+    patterns: [
+      { include: '#definition' }
+    ]

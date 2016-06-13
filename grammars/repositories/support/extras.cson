@@ -1,0 +1,7 @@
+key: 'extras'
+patterns: [
+  {
+    'match': '(?<![-/./\'/\"/=/:/])\\b(?:docker|g++|gcc|grep|grub\-*|make|mount|node|packer|patch|perl[0-9]*|php[0-9]*|python[0-9]*|script/build|script/grunt|su|sudo|umount)\\b(?![-/./\'/\"/=/`/])'
+    'name':  'support.function.extras.shell'
+  }
+]
