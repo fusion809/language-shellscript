@@ -1302,13 +1302,29 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|@|\\$|Syua)'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(pacman|yaourt)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'begin': '(pacman)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'beginCaptures':
+          '1':
+            'name': 'support.function.packages.shell'
+          '2':
+            'name': 'support.function.options.shell'
+          '3':
+            'name': 'support.function.options.shell'
+          '4':
+            'name': ''
+        'end': '(\\||;|&|$|@|\\$|Syu)'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.function.shell'
+      }
+      {
+        'begin': '(yaourt)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1316,7 +1332,21 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|@|\\$|Syua)'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.function.shell'
+      }
+      {
+        'begin': '(pacman)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'beginCaptures':
+          '1':
+            'name': 'support.function.packages.shell'
+          '2':
+            'name': 'support.function.options.shell'
+          '4':
+            'name': ''
+        'end': '(\\||;|&|$|@|\\$|Syu)'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
