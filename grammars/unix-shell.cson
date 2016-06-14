@@ -21,6 +21,8 @@
   'cygport'
   'bats'
   'ebuild'
+  'PKGBUILD'
+  'install'
 ]
 'firstLineMatch': '^#!.*\\b(bash|zsh|sh|tcsh|ksh|dash|ash|csh|rc)|(?i:^\\s*#\\s*-\\*-[^*]*mode:\\s*shell-script[^*]*-\\*-)'
 'patterns': [
