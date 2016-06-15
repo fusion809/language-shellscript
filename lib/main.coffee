@@ -1,7 +1,7 @@
 {CompositeDisposable, Directory} = require 'atom'
 CSON = require 'season'
 path = require 'path'
-notifications = atom.notifications
+# notifications = atom.notifications
 fs = require 'fs'
 
 module.exports =
@@ -12,7 +12,8 @@ module.exports =
     @subscriptions = new CompositeDisposable()
 
     if atom.inDevMode()
-      @subscriptions.add => @compileGrammar()
+      @subscriptions.add atom.commands.add 'atom-workspace',
+        'shellscript:compile-grammar-and-reload': => @compileGrammar()
 
   # Loads the basic grammar structure,
   # which includes the grouped parts in the repository,
@@ -22,7 +23,7 @@ module.exports =
   compileGrammar: ->
     if atom.inDevMode()
       input = '../grammars/repositories/shell.cson'
-      output = '../grammars/unix-shell.cson'
+      output = '../grammars/unix-shell.json'
       repositoryDirectories = ['support', 'variable']
       filepath = path.join(__dirname, input)
       grammar = CSON.readFileSync(filepath)
@@ -37,5 +38,7 @@ module.exports =
               patterns: patterns
 
       # Write {grammar} to {filepath},
-      # and reload window when complete
+      # and reload window (to reload grammar) when complete
       filepath = path.join(__dirname, output)
+      CSON.writeFileSync filepath, grammar, do ->
+        atom.commands.dispatch 'body', 'window:reload'
