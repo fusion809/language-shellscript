@@ -1,0 +1,7 @@
+key: 'editors'
+patterns: [
+  {
+    'match': '(?<![-/./\'/\"/=/:])((?<![a-zA-Z0-9_])\\s)(?:atom|awk|brackets|code|code-oss|ed|emacs|gvim|komodo|lighttable|nano|pico|sed|vi|vim)\\b(?![-/./\'/\"/=/`/])'
+    'name':  'support.function.editors.shell'
+  }
+]

@@ -1,0 +1,16 @@
+key: 'downloads'
+patterns: [
+  {
+    'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9] ])\\b(?:aria2c|curl|wget)\\b(?![-/./\'/\"/=/`/;/])'
+    'name':  'support.function.download.shell'
+  }
+  {
+    'begin': '(curl)\\s(-[a-zA-Z0-9]+)\\s([h|f]t[a-zA-Z0-9:/._]+)'
+    'beginCaptures':
+      '0':
+        'name': 'support.function.download.shell'
+      '1':
+        'name': 'support.function.options.shell'
+    'end':   ';|\\||$|&'
+  }
+]

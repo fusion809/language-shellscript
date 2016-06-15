@@ -1,0 +1,117 @@
+key: 'loop'
+patterns: [
+  {
+    'begin': '\\b(for)\\s+(?=\\({2})'
+    'captures':
+      '1':
+        'name': 'keyword.control.shell'
+    'end': '\\b(done)\\b'
+    'name': 'meta.scope.for-loop.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '\\b(for)\\b\\s+(.+)\\s+\\b(in)\\b'
+    'beginCaptures':
+      '1':
+        'name': 'keyword.control.shell'
+      '2':
+        'name': 'variable.other.loop.shell'
+        'patterns': [
+          {
+            'include': '#string'
+          }
+        ]
+      '3':
+        'name': 'keyword.control.shell'
+    'end': '(?<![-/])\\bdone\\b(?![-/])'
+    'endCaptures':
+      '0':
+        'name': 'keyword.control.shell'
+    'name': 'meta.scope.for-in-loop.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '\\b(while|until)\\b'
+    'captures':
+      '1':
+        'name': 'keyword.control.shell'
+    'end': '\\b(done)\\b'
+    'name': 'meta.scope.while-loop.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '\\b(select)\\s+((?:[^\\s\\\\]|\\\\.)+)\\b'
+    'beginCaptures':
+      '1':
+        'name': 'keyword.control.shell'
+      '2':
+        'name': 'variable.other.loop.shell'
+    'end': '\\b(done)\\b'
+    'endCaptures':
+      '1':
+        'name': 'keyword.control.shell'
+    'name': 'meta.scope.select-block.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '(?<!-)\\b(case)\\b(?!-)'
+    'captures':
+      '1':
+        'name': 'keyword.control.shell'
+    'end': '\\b(esac)\\b'
+    'name': 'meta.scope.case-block.shell'
+    'patterns': [
+      {
+        'begin': '\\b(?:in)\\b'
+        'beginCaptures':
+          '1':
+            'name': 'keyword.control.shell'
+        'end': '(?=\\b(?:esac)\\b)'
+        'name': 'meta.scope.case-body.shell'
+        'patterns': [
+          {
+            'include': '#comment'
+          }
+          {
+            'include': '#case-clause'
+          }
+          {
+            'include': '$self'
+          }
+        ]
+      }
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '(?<!-)\\b(if)\\b(?!-|\\s*=)'
+    'captures':
+      '1':
+        'name': 'keyword.control.shell'
+    'end': '\\b(fi)\\b'
+    'name': 'meta.scope.if-block.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+]

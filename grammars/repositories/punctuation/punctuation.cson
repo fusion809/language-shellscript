@@ -1,0 +1,31 @@
+key: 'punctuation'
+patterns: [
+ {
+    'begin': '\\$\\{'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.variable.shell'
+    'end': '\\}'
+    'name': 'variable.other.bracket.shell'
+    'patterns': [
+      {
+        'match': '!|:[-=?]?|\\*|@|#{1,2}|%{1,2}|/'
+        'name': 'keyword.operator.expansion.shell'
+      }
+      {
+        'captures':
+          '1':
+            'name': 'punctuation.section.array.shell'
+          '3':
+            'name': 'punctuation.section.array.shell'
+        'match': '(\\[)([^\\]]+)(\\])'
+      }
+      {
+        'include': '#variable'
+      }
+      {
+        'include': '#string'
+      }
+    ]
+  }
+]

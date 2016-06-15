@@ -1,0 +1,11 @@
+key: 'keyword'
+patterns: [
+  {
+    'match': '(?<!-)\\b(then|else|elif|fi|for|in|do|done|select|case|continue|esac|while|until|return)\\b(?!-)'
+    'name': 'keyword.control.shell'
+  }
+  {
+    'match': '(?<![-/./_/])\\b(?:export|declare|typeset|local|readonly)\\b'
+    'name': 'storage.modifier.shell'
+  }
+]

@@ -1,0 +1,7 @@
+key: 'list'
+patterns: [
+  {
+    'match': ';|&&|&|\\|'
+    'name': 'keyword.operator.list.shell'
+  }
+]

@@ -1,0 +1,11 @@
+key: 'builtins'
+patterns: [
+  {
+    'match': '(?<=^|\\s)(?::|\\.)(?=\\s|(\\||;|&|$))'
+    'name': 'support.function.builtin.shell'
+  }
+  {
+    'match': '(?<![-/./=/])\\b(?:alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\\b(?![-/=/`/])'
+    'name': 'support.function.builtin.shell'
+  }
+]

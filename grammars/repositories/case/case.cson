@@ -1,0 +1,49 @@
+key: 'case'
+patterns: [
+  {
+    'begin': '(?=\\S)'
+    'end': ';;'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.terminator.case-clause.shell'
+    'name': 'meta.scope.case-clause.shell'
+    'patterns': [
+      {
+        'begin': '(\\(|(?=\\S))'
+        'captures':
+          '0':
+            'name': 'punctuation.definition.case-pattern.shell'
+        'end': '\\)'
+        'name': 'meta.scope.case-pattern.shell'
+        'patterns': [
+          {
+            'match': '\\|'
+            'name': 'punctuation.separator.pipe-sign.shell'
+          }
+          {
+            'include': '#string'
+          }
+          {
+            'include': '#variable'
+          }
+          {
+            'include': '#interpolation'
+          }
+          {
+            'include': '#pathname'
+          }
+        ]
+      }
+      {
+        'begin': '(?<=\\))'
+        'end': '(?=;;)'
+        'name': 'meta.scope.case-clause-body.shell'
+        'patterns': [
+          {
+            'include': '$self'
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -28,17 +28,43 @@ fileTypes: [
 # maxTokensPerLine: 100
 
 patterns: [
-  { include: '#support' }
+  { include: '#case'                }
+  { include: '#comments'            }
+  { include: '#compound-command'    }
+  { include: '#function-definition' }
+  { include: '#heredoc'             }
+  { include: '#herestring'          }
+  { include: '#interpolation'       }
+  { include: '#keyword'             }
+  { include: '#list'                }
+  { include: '#logical-expression'  }
+  { include: '#loop'                }
+  { include: '#math'                }
+  { include: '#pathname'            }
+  { include: '#pipeline'            }
+  { include: '#punctuation'         }
+  { include: '#redirection'         }
+  { include: '#support'             }
+  { include: '#variables'           }
 ]
 
 repository:
   support:
     patterns: [
-      { include: '#archives' }
-      { include: '#coreutils' }
-      { include: '#extras' }
+      { include: '#archives'   }
+      { include: '#builtins'   }
+      { include: '#coreutils'  }
+      { include: '#downloads'  }
+      { include: '#editors'    }
+      { include: '#extras'     }
+      { include: '#fs'         }
+      { include: '#options'    }
+      { include: '#packages'   }
+      { include: '#users'      }
+      { include: '#vcs'        }
     ]
   variables:
     patterns: [
       { include: '#definition' }
+      { include: '#varother'   }
     ]

@@ -1,0 +1,61 @@
+key: 'function-definition'
+patterns: [
+  {
+    'begin': '\\b(function)\\s+([^\\s\\\\]+)(?:\\s*(\\(\\)))?'
+    'beginCaptures':
+      '1':
+        'name': 'storage.type.function.shell'
+      '2':
+        'name': 'entity.name.function.shell'
+      '3':
+        'name': 'punctuation.definition.arguments.shell'
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+    'name': 'meta.function.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '\\b(export)\\s(-f)\\s([a-zA-Z_]+)'
+    'beginCaptures':
+      '1':
+        'name': 'storage.modifier.shell'
+      '2':
+        'name': 'support.function.options.shell'
+      '3':
+        'name': 'entity.name.function.shell'
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+    'name': 'meta.function.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '\\b([^\\s\\\\=]+)\\s*(\\(\\))'
+    'beginCaptures':
+      '1':
+        'name': 'entity.name.function.shell'
+      '2':
+        'name': 'punctuation.definition.arguments.shell'
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+    'name': 'meta.function.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+key: 'logical-expression'
+patterns: [
+  {
+    'comment': 'do we want a special rule for ( expr )?'
+    'match': '=[=~]?|!=?|<|>|&&|\\|'
+    'name': 'keyword.operator.logical.shell'
+  }
+  {
+    'match': '(?<!\\S)-(nt|ot|ef|eq|ne|l[te]|g[te]|[a-hknoprstuwxzOGLSN])'
+    'name': 'keyword.operator.logical.shell'
+  }
+]

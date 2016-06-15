@@ -1,0 +1,20 @@
+key: 'vcs'
+patterns: [
+  {
+    'match': '(?<![-/./\'/\"/=/@/])\\b(?:bzr|cvs|git add|git bisect|git branch|git checkout|git clone|git commit|git diff|git fetch|git fork|git grep|git init|git log|git merge|git mv|git pull|git push|git rebase|git release|git reset|git rm|git show|git status|git submodule|git tag|hg|svn)\\b(?![-/./=/\'/\"/+/@/`/;/])'
+    'name':  'support.function.vcs.shell'
+  }
+  {
+    'begin': '(git)\\s(-[a-zA-Z0-9]*)\\s([a-zA-Z0-9/$_]*)\\s(add|bisect|branch|checkout|clone|commit|diff|fetch|fork|grep|init|log|merge|mv|pull|push|rebase|release|reset|rm|show|status|submodule|tag)'
+    'beginCaptures':
+      '1':
+        'name':  'support.function.vcs.shell'
+      '2':
+        'name':  'support.function.options.shell'
+      '3':
+        'name':  ''
+      '4':
+        'name':  'support.function.vcs.shell'
+    'end': ';|&|\\||$'
+  }
+]

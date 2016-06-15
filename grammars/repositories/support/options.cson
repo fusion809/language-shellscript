@@ -1,0 +1,21 @@
+key: 'options'
+patterns: [
+  {
+    'match': ' -[a-zA-Z0-9-]+'
+    'name': 'support.function.options.shell'
+  }
+  {
+    'begin': ' --[a-zA-Z0-9-=/]+'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.options.shell'
+    'end': ';|&|$'
+  }
+  {
+    'begin': ' --[a-zA-Z0-9-=/]+'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.options.shell'
+    'end': '\\|'
+  }
+]

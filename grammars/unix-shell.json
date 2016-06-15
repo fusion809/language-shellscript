@@ -21,11 +21,64 @@
     "npmrc",
     "cygport",
     "bats",
-    "ebuild"
+    "ebuild",
+    "PKGBUILD"
+    "install"
   ],
   "patterns": [
     {
+      "include": "#case"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#compound-command"
+    },
+    {
+      "include": "#function-definition"
+    },
+    {
+      "include": "#heredoc"
+    },
+    {
+      "include": "#herestring"
+    },
+    {
+      "include": "#interpolation"
+    },
+    {
+      "include": "#keyword"
+    }
+    {
+      "include": "#list"
+    },
+    {
+      "include": "#logical-expression"
+    },
+    {
+      "include": "#loop"
+    },
+    {
+      "include": "#math"
+    },
+    {
+      "include": "#pathname"
+    },
+    {
+      "include": "#pipeline"
+    },
+    {
+      "include": "#punctuation"
+    },
+    {
+      "include": "#redirection"
+    },
+    {
       "include": "#support"
+    },
+    {
+      "include": "#variables"
     }
   ],
   "repository": {
@@ -35,10 +88,34 @@
           "include": "#archives"
         },
         {
+          "include": "#builtins"
+        },
+        {
           "include": "#coreutils"
         },
         {
+          "include": "#downloads"
+        },
+        {
+          "include": "#editors"
+        },
+        {
           "include": "#extras"
+        },
+        {
+          "include": "#fs"
+        },
+        {
+          "include": "#options"
+        },
+        {
+          "include": "#packages"
+        },
+        {
+          "include": "#users"
+        },
+        {
+          "include": "#vcs"
         }
       ]
     },
@@ -46,32 +123,11 @@
       "patterns": [
         {
           "include": "#definition"
+        },
+        {
+          "include": "#varother"
         }
       ]
     },
-    "archives": {
-      "patterns": [
-        {
-          "match": "(?<![-/./'/\"/=/:/])\\b(?:ar|bsdtar|bzcat|bzip2|gzip|lz4|lz4c|lzcat|lz4cat|lzma|p7zip|tar|unzip|unzzipcat|xz|xzcat|zcat)\\b(?![-/./'/\"/=/`/ xz/])",
-          "name": "support.function.archives.shell"
-        }
-      ]
-    },
-    "coreutils": {
-      "patterns": [
-        {
-          "match": "(?<![-/./'/\"/=/])\\b(?:base32|base64|basename|cat|chcon|chgrp|chmod|chown|chroot|cksum|comm|cp|csplit|cut|date|dd|df|dir|dircolors|dirname|du|echo|env|expand|expr|factor|false|fmt|fold|head|hostid|id|install|join|link|ln|logname|ls|md5sum|mkdir|mkfifo|mknod|mktemp|mv|nice|nl|nohup|nproc|numfmt|od|paste|pathchk|pinky|pr|printenv|printf|ptx|pwd|readlink|realpath|rm|rmdir|runcon|seq|sha1sum|sha224sum|sha256sum|sha384sum|sha512sum|shred|shuf|sleep|sort|split|stat|stdbuf|stty|sum|sync|tac|tail|tee|test|timeout|touch|tr|true|truncate|tsort|tty|uname|unexpand|uniq|unlink|users|vdir|wc|who|whoami|yes)\\b(?![-/'/\"/=/`/])",
-          "name": "support.function.coreutils.shell"
-        }
-      ]
-    },
-    "extras": {
-      "patterns": [
-        {
-          "match": "(?<![-/./'/\"/=/:/])\\b(?:docker|g++|gcc|grep|grub-*|make|mount|node|packer|patch|perl[0-9]*|php[0-9]*|python[0-9]*|script/build|script/grunt|su|sudo|umount)\\b(?![-/./'/\"/=/`/])",
-          "name": "support.function.extras.shell"
-        }
-      ]
-    }
   }
 }

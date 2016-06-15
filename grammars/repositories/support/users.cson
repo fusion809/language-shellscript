@@ -1,0 +1,7 @@
+key: 'users'
+patterns: [
+  {
+    'match': '(?<![-/./\'/\"/=/:/])\\b(?:chsh|gpasswd|mkpasswd|passwd|useradd|usermod)\\b(?![-/./\'/\"/=/`/])'
+    'name':  'support.function.users.shell'
+  }
+]

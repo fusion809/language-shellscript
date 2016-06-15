@@ -24,7 +24,7 @@ module.exports =
     if atom.inDevMode()
       input = '../grammars/repositories/shell.cson'
       output = '../grammars/unix-shell.json'
-      repositoryDirectories = ['support', 'variable']
+      repositoryDirectories = ['case', 'comments', 'compound', 'function', 'heredoc', 'herestring', 'interpolation', 'keyword', 'list', 'logic', 'loop', 'math', 'pathname', 'pipeline', 'punctuation', 'redirection', 'support', 'variable']
       filepath = path.join(__dirname, input)
       grammar = CSON.readFileSync(filepath)
 

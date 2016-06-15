@@ -1,0 +1,7 @@
+key: 'fs'
+patterns: [
+  {
+    'match': '(?<![-/./\'/\"/=/:/])\\b(?:mkfs\.*|mkinitcpio|mksquashfs)\\b(?![-/./\'/\"/=/])'
+    'name':  'support.function.fs.shell'
+  }
+]

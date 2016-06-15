@@ -1,0 +1,310 @@
+key: 'packages'
+patterns: [
+  {
+    'begin': '(sudo)\\s(apm|apt|apt-cache|apt-fast|apt-get|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|bacman|bundle|checkupdates|cleanupdelta|composer|coronary|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|eopkg|equery|equo|etc-update|explodepkg|gem|installpkg|lein|makechrootpkg|makepkg-template|mkarchiso|mkarchroot|npm|osc|paccache|pacdiff|paclist|paclog-pkglist|pacman-db-upgrade|pacman-key|pacman-optimize|pacscripts|pacsearch|pacsort|pactree|pet2tgz|pkg|pkg_add|pkgdelta|pip|pip3|pkgtool|rankmirrors|removepkg|repo-add|repo-elephant|repo-remove|testpkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|mock|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slackpkg|slapt-get|updpkgsums|upgradepkg|vercmp|yum|zypper)\\s([a-zA-Z0-9-]+)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9-]+)\\s([a-zA-Z0-9-]+)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.extras.shell'
+      '2':
+        'name': 'support.function.packages.shell'
+      '3':
+        'name': 'support.function.coreutils.shell'
+      '4':
+        'name': 'support.function.options.shell'
+      '5':
+        'name': 'support.function.options.shell'
+      '6':
+        'name': ''
+    'end': '(?<![\\$])(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(?<![a-zA-Z0-9_])(apm|apt|apt-cache|apt-fast|apt-get|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|bacman|bundle|checkupdates|cleanupdelta|composer|coronary|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|eopkg|equery|equo|etc-update|explodepkg|gem|installpkg|lein|makechrootpkg|makepkg-template|mkarchiso|mkarchroot|npm|osc|paccache|pacdiff|paclist|paclog-pkglist|pacman-db-upgrade|pacman-key|pacman-optimize|pacscripts|pacsearch|pacsort|pactree|pet2tgz|pkg|pkg_add|pkgdelta|pip|pip3|pkgtool|rankmirrors|removepkg|repo-add|repo-elephant|repo-remove|testpkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|mock|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slackpkg|slapt-get|updpkgsums|upgradepkg|vercmp|yum|zypper)\\s([a-zA-Z0-9-]+)\\s(-[a-zA-Z0-9]+)\\s(-[a-zA-Z0-9-]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.coreutils.shell'
+      '3':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': 'support.function.options.shell'
+      '5':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(apm|apt|apt-cache|apt-fast|apt-get|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|bacman|bundle|checkupdates|cleanupdelta|composer|coronary|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|eopkg|equery|equo|etc-update|explodepkg|gem|installpkg|lein|makechrootpkg|makepkg-template|mkarchiso|mkarchroot|npm|osc|paccache|pacdiff|paclist|paclog-pkglist|pacman-db-upgrade|pacman-key|pacman-optimize|pacscripts|pacsearch|pacsort|pactree|pet2tgz|pkg|pkg_add|pkgdelta|pip|pip3|pkgtool|rankmirrors|removepkg|repo-add|repo-elephant|repo-remove|testpkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|mock|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slackpkg|slapt-get|updpkgsums|upgradepkg|vercmp|yum|zypper)\\s([a-zA-Z0-9-]+)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.coreutils.shell'
+      '3':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(apm|apt|apt-cache|apt-fast|apt-get|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|bacman|bundle|checkupdates|cleanupdelta|composer|coronary|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|eopkg|equery|equo|etc-update|explodepkg|gem|installpkg|lein|makechrootpkg|makepkg-template|mkarchiso|mkarchroot|npm|osc|paccache|pacdiff|paclist|paclog-pkglist|pacman-db-upgrade|pacman-key|pacman-optimize|pacscripts|pacsearch|pacsort|pactree|pet2tgz|pkg|pkg_add|pkgdelta|pip|pip3|pkgtool|rankmirrors|removepkg|repo-add|repo-elephant|repo-remove|testpkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|mock|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slackpkg|slapt-get|updpkgsums|upgradepkg|vercmp|yum|zypper)\\s([a-zA-Z0-9-]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.coreutils.shell'
+      '3':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(sudo)\\s(apm|apt|apt-cache|apt-fast|apt-get|apt-key|add-apt-repository|apt-add-repository|apt-config|apt-mark|aptitude|bacman|bundle|checkupdates|cleanupdelta|composer|coronary|dpkg|dpkg-architecture|dpkg-buildflags|dpkg-buildpackage|dpkg-checkbuilddeps|dpkg-deb|dpkg-distaddfile|dpkg-divert|dpkg-genchanges|dpkg-gencontrol|dpkg-gensymbols|dpkg-log-summary|dpkg-maintscript-helper|dpkg-mergechangelogs|dpkg-name|dpkg-parsechangelog|dpkg-query|dpkg-scanpackages|dpkg-scansources|dpkg-shlibdeps|dpkg-source|dpkg-split|dpkg-statoverride|dpkg-trigger|dpkg-vendor|dnf|ebuild|eopkg|equery|equo|etc-update|explodepkg|gem|installpkg|lein|makechrootpkg|makepkg-template|mkarchiso|mkarchroot|npm|osc|paccache|pacdiff|paclist|paclog-pkglist|pacman-db-upgrade|pacman-key|pacman-optimize|pacscripts|pacsearch|pacsort|pactree|pet2tgz|pkg|pkg_add|pkgdelta|pip|pip3|pkgtool|portmaster|rankmirrors|removepkg|repo-add|repo-elephant|repo-remove|testpkg|revdep-rebuild|rpm|rpm2archive|rpm2cpio|rpmargs|rpmbuild|mock|rpmdb|rpmdev-bumpspec|rpmdev-checksig|rpmdev-cksum|rpmdev-diff|rpmdev-extract|rpmdev-md5|rpmdev-newinit|rpmdev-newspec|rpmdev-packager|rpmdev-rmdevelrpms|rpmdev-setuptree|rpmdev-sha1|rpmdev-sha224|rpmdev-sha256|rpmdev-sha384|rpmdev-sha512|rpmdev-sort|rpmdev-sum|rpmdev-vercmp|rpmdev-wipetree|rpmdiff|rpmdrake|rpmelfsym|rpmfile|rpm-find-leaves|rpmgraph|rpminfo|rpmkeys|rpmlint|rpmls|rpmpeek|rpmquery|rpmsodiff|rpmsoname|rpmspec|rpmverify|slackpkg|slapt-get|upgradepkg|vercmp|yum|zypper)\\s([a-zA-Z0-9-]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.extras.shell'
+      '2':
+        'name': 'support.function.packages.shell'
+      '3':
+        'name': 'support.function.coreutils.shell'
+      '4':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s([a-zA-Z0-9-]+)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(makepkg)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+      '3':
+        'name': 'support.function.options.shell'
+    'end': ';|$|&|\\|'
+  }
+  {
+    'begin': '(makepkg)\\s(-[a-zA-Z0-9]+)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+    'end': ';|$|&|\\|'
+  }
+  {
+    'begin': '(makepkg)\\s(--[a-zA-Z0-9]+)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+    'end': ';|$|&|\\|'
+  }
+  {
+    'match': 'makepkg'
+    'name': 'support.function.packages.shell'
+  }
+  {
+    'begin': '(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-@]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+      '3':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': 'support.function.options.shell'
+      '5':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(sudo)\\s(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s([a-zA-Z0-9-@]+)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.extras.shell'
+      '2':
+        'name': 'support.function.packages.shell'
+      '3':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+    'end': '(;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9-]+)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+      '3':
+        'name': 'support.function.options.shell'
+    'end': '(;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(sudo)\\s(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-@]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.extras.shell'
+      '2':
+        'name': 'support.function.packages.shell'
+      '3':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': 'support.function.options.shell'
+      '5':
+        'name': 'support.function.options.shell'
+      '6':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'match': '(?<![-/./\'/\"/=/])\\b(emerge-webrsync|updpkgsums)\\b(?![-/./\'/\"/=/])'
+    'name':  'support.function.packages.shell'
+  }
+  {
+    'begin': '(yaourt)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+      '3':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': ''
+    'end': '(\\||;|&|$|@|\\$|\-Syua)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(pacman)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+      '3':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': ''
+    'end': '(\\||;|&|$|@|\\$|Syu)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(yaourt)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': ''
+    'end': '(\\||;|&|$|@|\\$|Syua)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(pacman)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.packages.shell'
+      '2':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': ''
+    'end': '(\\||;|&|$|@|\\$|Syu)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(sudo)(pacman)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.extras.shell'
+      '2':
+        'name': 'support.function.packages.shell'
+      '3':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': 'support.function.options.shell'
+      '5':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+  {
+    'begin': '(sudo)(pacman)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+    'beginCaptures':
+      '1':
+        'name': 'support.function.extras.shell'
+      '2':
+        'name': 'support.function.packages.shell'
+      '3':
+        'name': 'support.function.options.shell'
+      '4':
+        'name': 'support.function.options.shell'
+      '5':
+        'name': ''
+    'end': '(\\||;|&|$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.function.shell'
+  }
+]

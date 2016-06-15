@@ -1,0 +1,55 @@
+key: 'interpolation'
+patterns: [
+  {
+    'begin': '\\$\\({2}'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.shell'
+    'end': '\\){2}'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.shell'
+    'name': 'string.other.math.shell'
+    'patterns': [
+      {
+        'include': '#math'
+      }
+    ]
+  }
+  {
+    'begin': '`'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.shell'
+    'end': '`'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.shell'
+    'name': 'string.interpolated.backtick.shell'
+    'patterns': [
+      {
+        'match': '\\\\[`\\\\$]'
+        'name': 'constant.character.escape.shell'
+      }
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '\\$\\('
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.shell'
+    'end': '\\)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.shell'
+    'name': 'string.interpolated.dollar.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+]

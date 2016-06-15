@@ -1,0 +1,24 @@
+key: 'redirection'
+patterns: [
+  {
+    'begin': '[><]\\('
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.shell'
+    'end': '\\)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.shell'
+    'name': 'string.interpolated.process-substitution.shell'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'comment': 'valid: &>word >&word >word [n]>&[n] [n]<word [n]>word [n]>>word [n]<&word (last one is duplicate)'
+    'match': '&>|\\d*>&\\d*|\\d*(>>|>|<)|\\d*<&|\\d*<>'
+    'name': 'keyword.operator.redirect.shell'
+  }
+]
