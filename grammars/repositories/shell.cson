@@ -28,27 +28,91 @@ fileTypes: [
 # maxTokensPerLine: 100
 
 patterns: [
-  { include: '#case'                }
-  { include: '#comments'            }
-  { include: '#compound-command'    }
-  { include: '#function-definition' }
-  { include: '#heredoc'             }
-  { include: '#herestring'          }
-  { include: '#interpolation'       }
-  { include: '#keyword'             }
-  { include: '#list'                }
-  { include: '#logical-expression'  }
-  { include: '#loop'                }
-  { include: '#math'                }
-  { include: '#pathname'            }
-  { include: '#pipeline'            }
-  { include: '#punctuation'         }
-  { include: '#redirection'         }
-  { include: '#support'             }
-  { include: '#variables'           }
+  { include: '#case'                    }
+  { include: '#comments'                }
+  { include: '#compound-command'        }
+  { include: '#function-definition'     }
+  { include: '#heredoc'                 }
+  { include: '#herestring'              }
+  { include: '#interpolation'           }
+  { include: '#keyword'                 }
+  { include: '#list'                    }
+  { include: '#logical-expression'      }
+  { include: '#loop'                    }
+  { include: '#math'                    }
+  { include: '#pathname'                }
+  { include: '#pipeline'                }
+  { include: '#punctuation'             }
+  { include: '#redirection'             }
+  { include: '#support'                 }
+  { include: '#variables'               }
 ]
 
 repository:
+  case:
+    patterns: [
+      { include: '#case'                }
+    ]
+  comments:
+    patterns: [
+      { include: '#comments'            }
+    ]
+  compound:
+    patterns: [
+      { include: '#compound-command'    }
+    ]
+  function:
+    patterns: [
+      { include: '#function-definition' }
+    ]
+  heredoc:
+    patterns: [
+      { include: '#heredoc'             }
+    ]
+  herestring:
+    patterns: [
+      { include: '#herestring'          }
+    ]
+  interpolation:
+    patterns: [
+      { include: '#interpolation'       }
+    ]
+  keyword:
+    patterns: [
+      { include: '#keyword'             }
+    ]
+  list:
+    patterns: [
+      { include: '#list'                }
+    ]
+  logic:
+    patterns: [
+      { include: '#logic'               }
+    ]
+  loop:
+    patterns: [
+      { include: '#loop'                }
+    ]
+  math:
+    patterns: [
+      { include: '#math'                }
+    ]
+  pathname:
+    patterns: [
+      { include: '#pathname'            }
+    ]
+  pipeline:
+    patterns: [
+      { include: '#pipeline'            }
+    ]
+  punctuation:
+    patterns: [
+      { include: '#punctuation'         }
+    ]
+  redirection:
+    patterns: [
+      { include: '#redirection'         }
+    ]
   support:
     patterns: [
       { include: '#archives'   }
