@@ -1063,17 +1063,17 @@
         'name':  'support.function.fs.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9] ])\\b(?:aria2c|curl|wget)\\b(?![-/./\'/\"/=/`/;/])'
+        'match': '(?<![a-zA-Z0-9.-:="])(?<![a-zA-Z0-9.-:="]\\s)(?<![\'])(?:aria2c|curl|wget)\\b(?![-/./\'/\"/=/`/;/])'
         'name':  'support.function.download.shell'
       }
       {
-        'begin': '(curl)\\s(-[a-zA-Z0-9]+)\\s([h|f]t[a-zA-Z0-9:/._]+)'
+        'begin': '(curl)\\s(-[a-zA-Z0-9-]+)'
         'beginCaptures':
-          '0':
-            'name': 'support.function.download.shell'
           '1':
+            'name': 'support.function.download.shell'
+          '2':
             'name': 'support.function.options.shell'
-        'end':   ';|\\||$|&'
+        'end':   ';|\\||$|&|http|ftp'
       }
       {
         'match': '(?<![-/./\'/\"/=/@/])\\b(?:bzr|cvs|git add|git bisect|git branch|git checkout|git clone|git commit|git diff|git fetch|git fork|git grep|git init|git log|git merge|git mv|git pull|git push|git rebase|git release|git reset|git rm|git show|git status|git submodule|git tag|hg|svn)\\b(?![-/./=/\'/\"/+/@/`/;/])'
@@ -1404,7 +1404,7 @@
         'name':  'support.function.extras.shell'
       }
       {
-        'match': '(?<![a-zA-Z0-9-]\\s)(ar|bsdtar|bzcat|bzip2|gzip|lz4|lz4c|lzcat|lz4cat|lzma|p7zip|tar|unzip|unzzipcat|xz|xzcat|zcat)(?<!\\s[a-zA-Z0-9-])'
+        'match': '(?<![a-zA-Z0-9-./]\\s)(?<![a-zA-Z0-9-./])(ar|bsdtar|bzcat|bzip2|gzip|lz4|lz4c|lzcat|lz4cat|lzma|p7zip|tar|unzip|unzzipcat|xz|xzcat|zcat)(?<!\\s[a-zA-Z0-9-])'
         'name':  'support.function.archives.shell'
       }
       {
