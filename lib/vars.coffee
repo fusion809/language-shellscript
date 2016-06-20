@@ -958,3 +958,8 @@ module.exports =
     description: "APT key management utility."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  'apt-mark':
+    text: "apt-mark"
+    description: "Show and modify various settings for a package"
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
