@@ -1023,71 +1023,59 @@ module.exports =
     text: "dpkg"
     description: "dpkg package manager for Debian-based distributions."
     type: "package-manager"
-    ref: "https://fusion809.github.io/man/dpkg.1.html"
   ,
   'dpkg-architecture':
     text: "dpkg-architecture"
     description: "dpkg-architecture, set and determine the architecture for package building."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-architecture.1.html"
   ,
   'dpkg-buildflags':
     text: "dpkg-buildflags"
     description: "dpkg-buildflags, returns build flags to use during package build."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-buildflags.1.html"
   ,
   'dpkg-buildpackage':
     text: "dpkg-buildpackage"
     description: "dpkg-buildpackage, build binary or source package from sources."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-buildpackage.1.html"
   ,
   'dpkg-checkbuilddeps':
     text: "dpkg-checkbuilddeps"
     description: "dpkg-checkbuilddeps, check build dependencies and conflicts."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-checkbuilddeps.1.html"
   ,
   'dpkg-deb':
     text: "dpkg-deb"
     description: "dpkg-deb, package archive manipulation tool."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-deb.1.html"
   ,
   'dpkg-distaddfile':
     text: "dpkg-distaddfile"
     description: "dpkg-distaddfile, add entries to debian/files."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-distaddfile.1.html"
   ,
   'dpkg-divert':
     text: "dpkg-divert"
     description: "dpkg-divert, override a package's version of a file."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-divert.8.html"
   ,
   'dpkg-genchanges':
     text: "dpkg-genchanges"
     description: "dpkg-genchanges, generate Debian .changes files."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-genchanges.1.html"
   ,
   'dpkg-gencontrol':
     text: "dpkg-gencontrol"
     description: "dpkg-gencontrol, generate Debian control files."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-gencontrol.1.html"
   ,
   'dpkg-gensymbols':
     text: "dpkg-gensymbols"
     description: "dpkg-gensymbols, generate symbols files (shared library dependency information)."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-gensymbols.1.html"
   ,
   'dpkg-query':
     text: "dpkg-query"
     description: "dpkg-query, a tool to query the dpkg database."
     type: "package-manager"
-    more: "https://fusion809.github.io/man/dpkg-query.1.html"
   ,

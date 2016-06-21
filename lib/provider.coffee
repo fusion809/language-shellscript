@@ -1,5 +1,7 @@
 
-bvars = require './vars'
+bvars   = require './vars'
+url     = require('url');
+ManView = require('./man-view');
 
 module.exports =
 class shellVarProvider
@@ -24,4 +26,11 @@ class shellVarProvider
     rightLabel: bvar.text
     description: bvar.description
     replacementPrefix: prefix
-    descriptionMoreURL: bvar.more
+    descriptionMoreURL: @man_page(bvar.text)
+
+  man_page: (command) =>
+    parsed = url.parse(command);
+    return if 'man:' != parsed.protocol
+    path = parsed.path.substring(1);
+    result = new ManView(uri: command, filePath: path);
+    return result;
