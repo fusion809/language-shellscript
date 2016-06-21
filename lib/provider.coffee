@@ -24,4 +24,4 @@ class shellVarProvider
     rightLabel: bvar.text
     description: bvar.description
     replacementPrefix: prefix
-    descriptionMoreURL: "https://www.gnu.org/software/bash/manual/bash.html#"+bvar.ref
+    descriptionMoreURL: bvar.more
