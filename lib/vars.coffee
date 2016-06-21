@@ -1025,9 +1025,69 @@ module.exports =
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
   ,
+  'dpkg-architecture':
+    text: "dpkg-architecture"
+    description: "dpkg-architecture, set and determine the architecture for package building."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-buildflags':
+    text: "dpkg-buildflags"
+    description: "dpkg-buildflags, returns build flags to use during package build."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-buildpackage':
+    text: "dpkg-buildpackage"
+    description: "dpkg-buildpackage, build binary or source package from sources."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-checkbuilddeps':
+    text: "dpkg-checkbuilddeps"
+    description: "dpkg-checkbuilddeps, check build dependencies and conflicts."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
   'dpkg-deb':
     text: "dpkg-deb"
-    description: "dpkg-deb package archive manipulation tool."
+    description: "dpkg-deb, package archive manipulation tool."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-distaddfile':
+    text: "dpkg-distaddfile"
+    description: "dpkg-distaddfile, add entries to debian/files."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-divert':
+    text: "dpkg-divert"
+    description: "dpkg-divert, override a package's version of a file."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-genchanges':
+    text: "dpkg-genchanges"
+    description: "dpkg-genchanges, generate Debian .changes files."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-gencontrol':
+    text: "dpkg-gencontrol"
+    description: "dpkg-gencontrol, generate Debian control files."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-gensymbols':
+    text: "dpkg-gensymbols"
+    description: "dpkg-gensymbols, generate symbols files (shared library dependency information)."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-query':
+    text: "dpkg-query"
+    description: "dpkg-query, a tool to query the dpkg database."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
   ,
