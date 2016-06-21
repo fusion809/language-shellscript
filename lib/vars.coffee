@@ -982,3 +982,52 @@ module.exports =
     description: "High-level interface to the package manager"
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  ,
+  bacman:
+    text: "bacman"
+    description: "bacman - recreate a package using pacman's database and system files."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  bundle:
+    text: "bundle"
+    description: "Bundler, the dependency-aware package manager for Rubygems."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  checkupdates:
+    text: "checkupdates"
+    description: "checkupdates, safely print a list of pending package updates for pacman."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  checkupdeltas:
+    text: "cleanupdelta"
+    description: "cleanupdelta, which returns a list of unused delta in a given sync database."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  composer:
+    text: "composer"
+    description: "composer, a package manager for PHP."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  conary:
+    text: "conary"
+    description: "conary package manager."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  dpkg:
+    text: "dpkg"
+    description: "dpkg package manager for Debian-based distributions."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  'dpkg-deb':
+    text: "dpkg-deb"
+    description: "dpkg-deb package archive manipulation tool."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
