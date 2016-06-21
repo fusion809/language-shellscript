@@ -928,38 +928,57 @@ module.exports =
     description: "Add an APT repository."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  ,
   apm:
     text: "apm"
     description: "apm package manager."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  ,
   apt:
     text: "apt"
     description: "APT package manager."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  ,
   'apt-add-repository':
     text: "add-apt-repository"
     description: "Add an APT repository."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  ,
   'apt-cache':
     text: "apt-cache"
     description: "Query the APT cache."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  ,
+  'apt-config':
+    text: "apt-config"
+    description: "Configure APT."
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
   'apt-get':
     text: "apt-get"
     description: "APT package handling utility."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  ,
   'apt-key':
     text: "apt-key"
     description: "APT key management utility."
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"
+  ,
   'apt-mark':
     text: "apt-mark"
     description: "Show and modify various settings for a package"
+    type: "package-manager"
+    ref: "Shell-Package-Manager-Commands"
+  ,
+  aptitude:
+    text: "aptitude"
+    description: "High-level interface to the package manager"
     type: "package-manager"
     ref: "Shell-Package-Manager-Commands"

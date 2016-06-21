@@ -1047,19 +1047,19 @@
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./=/])\\b(?:alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\\b(?![-/=/`/])'
+        'match': '(?<![-/./=/[a-zA-Z0-9_]/])\\b(?:alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\\b(?![-/=/`/])'
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:])((?<![a-zA-Z0-9_]\\s))(?:atom|awk|brackets|code|code-oss|ed|emacs|gvim|komodo|lighttable|nano|pico|sed|vi|vim)\\b(?![-/./\'/\"/=/`/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(?:atom|awk|brackets|code|code-oss|ed|emacs|gvim|komodo|lighttable|nano|pico|sed|vi|vim)\\b(?![-/./\'/\"/=/`/])'
         'name':  'support.function.editors.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/])\\b(?:chsh|gpasswd|mkpasswd|passwd|useradd|usermod)\\b(?![-/./\'/\"/=/`/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])\\b(?:chsh|gpasswd|mkpasswd|passwd|useradd|usermod)\\b(?![-/./\'/\"/=/`/])'
         'name':  'support.function.users.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/])\\b(?:mkfs\.*|mkinitcpio|mksquashfs)\\b(?![-/./\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])\\b(?:mkfs\.*|mkinitcpio|mksquashfs)\\b(?![-/./\'/\"/=/])'
         'name':  'support.function.fs.shell'
       }
       {
@@ -1076,7 +1076,7 @@
         'end':   ';|\\||$|&|http|ftp'
       }
       {
-        'match': '(?<![-/./\'/\"/=/@/])\\b(?:bzr|cvs|git add|git bisect|git branch|git checkout|git clone|git commit|git diff|git fetch|git fork|git grep|git init|git log|git merge|git mv|git pull|git push|git rebase|git release|git reset|git rm|git show|git status|git submodule|git tag|hg|svn)\\b(?![-/./=/\'/\"/+/@/`/;/])'
+        'match': '(?<![-/./\'/\"/=/@/[a-zA-Z0-9_]/])\\b(?:bzr|cvs|git add|git bisect|git branch|git checkout|git clone|git commit|git diff|git fetch|git fork|git grep|git init|git log|git merge|git mv|git pull|git push|git rebase|git release|git reset|git rm|git show|git status|git submodule|git tag|hg|svn)\\b(?![-/./=/\'/\"/+/@/`/;/])'
         'name':  'support.function.vcs.shell'
       }
       {
@@ -1468,7 +1468,7 @@
         ]
       }
       {
-        'begin': '(?<![/$])([a-zA-Z0-9_-]+)(=)'
+        'begin': '(?<![/$/[a-zA-Z0-9_]/\\//])([a-zA-Z0-9_-]+)(=)'
         'beginCaptures':
           '1':
             'name': 'variable.definition.name'
