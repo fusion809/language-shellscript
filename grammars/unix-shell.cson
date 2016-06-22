@@ -1314,7 +1314,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$|\-Syua)'
+        'end': '(\\||;|&|$|@|\\$)'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
