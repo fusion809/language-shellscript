@@ -8,15 +8,13 @@ man_opener = (uriToOpen) ->
     path = parsed.path.substring(1);
     result = new ManView(uri: uriToOpen, filePath: path);
     return result;
-    
+
 module.exports =
   provider: null
   manInputView: null
 
   activate: (state) ->
       atom.workspace.addOpener(man_opener);
-      atom.commands.add 'atom-text-editor',
-          'language-unix-shell:man', @man
   ,
   deactivate: () ->
       @manInputView.destroy()

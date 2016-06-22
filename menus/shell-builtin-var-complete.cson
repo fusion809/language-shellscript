@@ -17,6 +17,13 @@
           'command': 'language-unix-shell:toggle'
         }
       ]
+      'label': 'Man Pages'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'language-unix-shell:man'
+        }
+      ]
     ]
   }
 ]
