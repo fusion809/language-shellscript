@@ -1025,11 +1025,11 @@
   'support':
     'patterns': [
       {
-        'match': ' -[a-zA-Z0-9-]+'
+        'match': ' -[a-zA-Z0-9-\_]+'
         'name': 'support.function.options.shell'
       }
       {
-        'begin': ' --[a-zA-Z0-9-=/]+'
+        'begin': ' --[a-zA-Z0-9-=/\_]+'
         'beginCaptures':
           '1':
             'name': 'support.function.options.shell'
