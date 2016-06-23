@@ -1076,7 +1076,7 @@
         'end':   ';|\\||$|&|http|ftp'
       }
       {
-        'match': '(?<![-/./\'/\"/=/@/[a-zA-Z0-9_]/])\\b(?:bzr|cvs|git add|git bisect|git branch|git checkout|git clone|git commit|git diff|git fetch|git fork|git grep|git init|git log|git merge|git mv|git pull|git push|git rebase|git release|git reset|git rm|git show|git status|git submodule|git tag|hg|svn)\\b(?![-/./=/\'/\"/+/@/`/;/])'
+        'match': '(?<![-/./\'/\"/=/@/[a-zA-Z0-9_]/])\\b(?:bzr|cvs|git add|git bisect|git branch|git checkout|git clone|git commit|git diff|git fetch|git fork|git grep|git init|git log|git merge|git mv|git pull|git push|git rebase|git release|git reset|git rm|git show|git status|git submodule|git tag|hub create|hub pull-request|hub fork|hub browse|hub compare|hub release|hub issue|hub ci-status|hg|svn)\\b(?![-/./=/\'/\"/+/@/`/;/])'
         'name':  'support.function.vcs.shell'
       }
       {
