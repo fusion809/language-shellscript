@@ -133,7 +133,7 @@
             'beginCaptures':
               '0':
                 'name': 'punctuation.definition.comment.shebang.shell'
-            'end': '\\n'
+            'end': '$'
             'name': 'comment.line.number-sign.shebang.shell'
           }
           {
@@ -141,7 +141,7 @@
             'beginCaptures':
               '0':
                 'name': 'punctuation.definition.comment.shell'
-            'end': '\\n'
+            'end': '$'
             'name': 'comment.line.number-sign.shell'
           }
         ]
