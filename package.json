@@ -1,6 +1,6 @@
 {
   "name": "language-unix-shell",
-  "version": "0.33.1",
+  "version": "0.33.2",
   "main": "./lib/main",
   "author": "GitHub, Inc.",
   "contributor": "Brenton Horne <brentonhorne77@gmail.com>",
