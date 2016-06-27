@@ -3,8 +3,8 @@
   "version": "0.33.5",
   "author": "GitHub, Inc.",
   "contributor": "Brenton Horne <brentonhorne77@gmail.com>",
-  "readme": "./README.md",
-  "description": "Shell script language support in Atom. Fork of language-shellscript, with extra support for common Unix commands. Also provides autocompletions for shell. Designed to be used with the dark-bint-syntax theme.",
+  "readmeFilename": "README.md",
+  "description": "Shell script language support in Atom. Fork of language-shellscript, with extra support for common Unix commands. Designed to be used with the dark-bint-syntax theme.",
   "engines": {
     "atom": "*",
     "node": "*"
@@ -15,6 +15,7 @@
     "url": "https://github.com/fusion809/language-shellscript.git"
   },
   "license": "MIT",
+  "licenseFilename": "LICENSE",
   "bugs": {
     "url": "https://github.com/fusion809/language-shellscript/issues"
   },

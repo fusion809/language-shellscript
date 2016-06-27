@@ -1,4 +1,5 @@
-Copyright (c) 2014-2016 GitHub Inc., Brenton Horne <brentonhorne77@gmail.com>
+Copyright (c) 2014-2016 GitHub Inc.
+              2016 Brenton Horne <brentonhorne77@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
