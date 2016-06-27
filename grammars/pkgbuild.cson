@@ -2,7 +2,6 @@
 'name': 'PKGBUILD'
 'fileTypes': [
   'PKGBUILD'
-  'install'
 ]
 'patterns': [
   { 'include': 'source.shell' }

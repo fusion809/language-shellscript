@@ -1,0 +1,8 @@
+'scopeName': 'source.shell.install'
+'name': 'Install'
+'fileTypes': [
+  'install'
+]
+'patterns': [
+  { 'include': 'source.shell' }
+]
