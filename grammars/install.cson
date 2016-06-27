@@ -1,5 +1,5 @@
 'scopeName': 'source.shell.install'
-'name': 'Install'
+'name': 'Install file'
 'fileTypes': [
   'install'
 ]
