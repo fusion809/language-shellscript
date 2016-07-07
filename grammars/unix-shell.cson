@@ -1048,7 +1048,7 @@
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(?:atom|awk|brackets|code|code-oss|ed|emacs|gvim|komodo|lighttable|nano|pico|sed|vi|vim)\\b(?![-/./\'/\"/=/`/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(?:atom|atom-beta|atom-git|atom-bleeding|awk|brackets|code|code-git|code-oss|ed|emacs|gvim|komodo|lighttable|nano|pico|sed|vi|vim)\\b(?![-/./\'/\"/=/`/])'
         'name':  'support.function.editors.shell'
       }
       {
@@ -1077,11 +1077,11 @@
         'name':  'support.function.vcs.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/@/[a-zA-Z0-9_]/])\\b(git)\\s(add|bisect|branch|checkout|clone|commit|diff|fetch|fork|grep|init|log|merge|mv|pull|push|rebase|release|remote|reset|rm|show|status|submodule|tag)\\b(?![-/./=/\'/\"/+/@/`/;/])'
+        'match': '(?<![-/./\'/\"/=/@/[a-zA-Z0-9_]/])\\b(git)\\s(add|bisect|branch|checkout|clone|commit|diff|fetch|find|fork|grep|init|log|merge|mv|pull|push|rebase|release|remote|reset|rm|show|status|submodule|tag)\\b(?![-/./=/\'/\"/+/@/`/;/])'
         'name':  'support.function.vcs.shell'
       }
       {
-        'begin': '(git)\\s(-[a-zA-Z0-9-_]*)\\s([a-zA-Z0-9/$_]*)\\s(add|bisect|branch|checkout|clone|commit|describe|diff|fetch|fork|grep|init|log|merge|mv|pull|push|rebase|release|reset|rm|show|status|submodule|remote|tag)'
+        'begin': '(git)\\s(-[a-zA-Z0-9-_]*)\\s([a-zA-Z0-9/$_]*)\\s(add|bisect|branch|checkout|clone|commit|describe|diff|fetch|find|fork|grep|init|log|merge|mv|pull|push|rebase|release|reset|rm|show|status|submodule|remote|tag)'
         'beginCaptures':
           '1':
             'name':  'support.function.vcs.shell'
@@ -1457,7 +1457,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9]/])(?:docker|g\+\+|gcc|grep|grub|make|mount|node|nodejs|packer|patch|perl|php|php5|php6|php7|python|python2|python3|python3.4|python3.5|python2.7|script/build|script/grunt|su|sudo|umount)\\b(?![-/./\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9]/])(?:docker|g\+\+|gcc|grub|make|mount|node|nodejs|packer|patch|perl|php|php5|php6|php7|python|python2|python3|python3.4|python3.5|python2.7|script/build|script/grunt|su|sudo|umount)\\b(?![-/./\'/\"/=/])'
         'name':  'support.function.extras.shell'
       }
       {
