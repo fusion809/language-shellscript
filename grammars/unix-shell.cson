@@ -286,7 +286,7 @@
             'name': 'entity.name.function.shell'
           '3':
             'name': 'punctuation.definition.arguments.shell'
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -306,7 +306,7 @@
             'name': 'support.function.options.shell'
           '3':
             'name': 'entity.name.function.shell'
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -324,7 +324,7 @@
             'name': 'entity.name.function.shell'
           '2':
             'name': 'punctuation.definition.arguments.shell'
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1126,7 +1126,7 @@
             'name': 'support.function.options.shell'
           '5':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1142,7 +1142,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1156,7 +1156,7 @@
             'name': 'support.function.coreutils.shell'
           '3':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1172,25 +1172,25 @@
             'name': 'support.function.coreutils.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s([a-zA-Z0-9-]+)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s([a-zA-Z0-9-]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
           '2':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(makepkg)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(makepkg)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1198,32 +1198,32 @@
             'name': 'support.function.options.shell'
           '3':
             'name': 'support.function.options.shell'
-        'end': ';|$|&|\\|'
+        'end': ';|$|&|\\|\"'
       }
       {
-        'begin': '(makepkg)\\s(-[a-zA-Z0-9]+)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(makepkg)\\s(-[a-zA-Z0-9]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
           '2':
             'name': 'support.function.options.shell'
-        'end': ';|$|&|\\|'
+        'end': ';|$|&|\\|\"'
       }
       {
-        'begin': '(makepkg)\\s(--[a-zA-Z0-9]+)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(makepkg)\\s(--[a-zA-Z0-9]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
           '2':
             'name': 'support.function.options.shell'
-        'end': ';|$|&|\\|'
+        'end': ';|$|&|\\|\"'
       }
       {
-        'match': 'makepkg'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(makepkg)'
         'name': 'support.function.packages.shell'
       }
       {
-        'begin': '(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-@]*)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-@]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1235,13 +1235,13 @@
             'name': 'support.function.options.shell'
           '5':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(sudo)\\s(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s([a-zA-Z0-9-@]+)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(sudo)\\s(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s([a-zA-Z0-9-@]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.extras.shell'
@@ -1249,25 +1249,25 @@
             'name': 'support.function.packages.shell'
           '3':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
           '2':
             'name': 'support.function.options.shell'
-        'end': '(;|&|$)'
+        'end': '(;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9-]+)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9-]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1275,13 +1275,13 @@
             'name': 'support.function.options.shell'
           '3':
             'name': 'support.function.options.shell'
-        'end': '(;|&|$)'
+        'end': '(;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(sudo)\\s(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-@]*)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(sudo)\\s(emerge|urpmf|urpmi|urpmi.update|urpme|urpmq)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-@]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.extras.shell'
@@ -1295,13 +1295,13 @@
             'name': 'support.function.options.shell'
           '6':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/])\\b(emerge-webrsync|updpkgsums|namcap|mksrcinfo)\\b(?![-/./\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))\\b(emerge-webrsync|updpkgsums|namcap|mksrcinfo)\\b(?![-/./\'/\"/=/])'
         'name':  'support.function.packages.shell'
       }
       {
@@ -1315,7 +1315,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$|\-Syua)'
+        'end': '(\\||;|&|$|@|\\$|\-Syua|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1331,7 +1331,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$|Syu)'
+        'end': '(\\||;|&|$|@|\\$|Syu|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1345,7 +1345,7 @@
             'name': 'support.function.options.shell'
           '3':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$)'
+        'end': '(\\||;|&|$|@|\\$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1357,7 +1357,7 @@
             'name': 'support.function.packages.shell'
           '2':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$)'
+        'end': '(\\||;|&|$|@|\\$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1373,7 +1373,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$)'
+        'end': '(\\||;|&|$|@|\\$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1387,7 +1387,7 @@
             'name': 'support.function.packages.shell'
           '3':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$)'
+        'end': '(\\||;|&|$|@|\\$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1401,7 +1401,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$|Syua)'
+        'end': '(\\||;|&|$|@|\\$|Syua|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1415,7 +1415,7 @@
             'name': 'support.function.options.shell'
           '4':
             'name': ''
-        'end': '(\\||;|&|$|@|\\$|Syu)'
+        'end': '(\\||;|&|$|@|\\$|Syu|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1433,7 +1433,7 @@
             'name': 'support.function.options.shell'
           '5':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1451,7 +1451,7 @@
             'name': 'support.function.options.shell'
           '5':
             'name': ''
-        'end': '(\\||;|&|$)'
+        'end': '(\\||;|&|$|\")'
         'endCaptures':
           '0':
             'name': 'punctuation.definition.function.shell'
@@ -1469,7 +1469,7 @@
         'name':  'support.function.archives.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/])\\b(?:base32|base64|basename|cat|chcon|chgrp|chmod|chown|chroot|cksum|comm|cp|csplit|cut|date|dd|df|dir|dircolors|dirname|du|echo|env|expand|expr|factor|false|fmt|fold|head|hostid|id|install|join|link|ln|logname|ls|md5sum|mkdir|mkfifo|mknod|mktemp|mv|nice|nl|nohup|nproc|numfmt|od|paste|pathchk|pinky|pr|printenv|printf|ptx|pwd|readlink|realpath|rm|rmdir|runcon|seq|sha1sum|sha224sum|sha256sum|sha384sum|sha512sum|shred|shuf|sleep|sort|split|stat|stdbuf|stty|sum|sync|tac|tail|tee|test|timeout|touch|tr|true|truncate|tsort|tty|uname|unexpand|uniq|unlink|users|vdir|wc|who|whoami|yes)\\b(?![-/\'/\"/=/`/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))\\b(?:base32|base64|basename|cat|chcon|chgrp|chmod|chown|chroot|cksum|comm|cp|csplit|cut|date|dd|df|dir|dircolors|dirname|du|echo|env|expand|expr|factor|false|fmt|fold|head|hostid|id|install|join|link|ln|logname|ls|md5sum|mkdir|mkfifo|mknod|mktemp|mv|nice|nl|nohup|nproc|numfmt|od|paste|pathchk|pinky|pr|printenv|printf|ptx|pwd|readlink|realpath|rm|rmdir|runcon|seq|sha1sum|sha224sum|sha256sum|sha384sum|sha512sum|shred|shuf|sleep|sort|split|stat|stdbuf|stty|sum|sync|tac|tail|tee|test|timeout|touch|tr|true|truncate|tsort|tty|uname|unexpand|uniq|unlink|users|vdir|wc|who|whoami|yes)\\b(?![-/\'/\"/=/`/_/])'
         'name': 'support.function.coreutils.shell'
       }
       {
