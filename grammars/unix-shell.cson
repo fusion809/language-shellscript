@@ -1044,7 +1044,7 @@
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./=/[a-zA-Z0-9_]/])\\b(?:alias|autoload|bg|bind|bindkey|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|msg|msg2|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait|warning|zmodload)\\b(?![./-/=/`/[a-zA-Z0-9_]/])'
+        'match': '(?<![-/./=/[a-zA-Z0-9_]/])\\b(?:alias|autoload|bg|bind|bindkey|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|error|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|msg|msg2|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait|warning|zmodload)\\b(?![./-/=/`/[a-zA-Z0-9_]/])'
         'name': 'support.function.builtin.shell'
       }
       {
