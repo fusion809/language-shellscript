@@ -1044,27 +1044,27 @@
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./=/[a-zA-Z0-9_]/])\\b(?:alias|autoload|bg|bind|bindkey|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait|zmodload)\\b(?![-/=/`/])'
+        'match': '(?<![-/./=/[a-zA-Z0-9_]/])\\b(?:alias|autoload|bg|bind|bindkey|break|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|msg|msg2|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait|warning|zmodload)\\b(?![./-/=/`/[a-zA-Z0-9_]/])'
         'name': 'support.function.builtin.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(?:atom|atom-beta|atom-git|atom-bleeding|awk|brackets|code|code-git|code-oss|ed|emacs|gvim|komodo|lighttable|nano|pico|sed|vi|vim)\\b(?![-/./\'/\"/=/`/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(?:atom|atom-beta|atom-git|atom-bleeding|awk|brackets|code|code-git|code-oss|ed|emacs|gvim|komodo|lighttable|nano|pico|sed|vi|vim)\\b(?![-/./\'/\"/=/`/[a-zA-Z0-9_]/])'
         'name':  'support.function.editors.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])\\b(?:chsh|gpasswd|mkpasswd|passwd|useradd|usermod)\\b(?![-/./\'/\"/=/`/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])\\b(?:chsh|gpasswd|mkpasswd|passwd|useradd|usermod)\\b(?![-/./\'/\"/=/`/[a-zA-Z0-9_]/])'
         'name':  'support.function.users.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])\\b(?:mkfs\.*|mkinitcpio|mksquashfs)\\b(?![-/./\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])\\b(?:mkfs\.*|mkinitcpio|mksquashfs)\\b(?![-/./\'/\"/=/[a-zA-Z0-9_]/])'
         'name':  'support.function.fs.shell'
       }
       {
-        'match': '(?<![a-zA-Z0-9.-:="])(?<![a-zA-Z0-9.-:="]\\s)(?<![\'])(?:aria2c|curl|wget)\\b(?![-/./\'/\"/=/`/;/])'
+        'match': '(?<![a-zA-Z0-9.-:="])(?<![a-zA-Z0-9.-:="]\\s)(?<![\'])(?:aria2c|curl|wget)\\b(?![-/./\'/\"/=/`/;/[a-zA-Z0-9_]/])'
         'name':  'support.function.download.shell'
       }
       {
-        'begin': '(curl)\\s(-[a-zA-Z0-9-]+)'
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9]/])(curl)\\s(-[a-zA-Z0-9-]+)\\b(?![-/./\'/\"/=/`/;/[a-zA-Z0-9_]/])'
         'beginCaptures':
           '1':
             'name': 'support.function.download.shell'
@@ -1305,7 +1305,7 @@
         'name':  'support.function.packages.shell'
       }
       {
-        'begin': '(yaourt)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(yaourt)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1321,7 +1321,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(pacman)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(pacman)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1337,7 +1337,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(pacsearch)\\s(-[a-zA-Z0-9-]+)\\s([a-zA-Z0-9-]*|\\$@|\\$i|\\*[a-zA-Z0-9.]+)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(pacsearch)\\s(-[a-zA-Z0-9-]+)\\s([a-zA-Z0-9-]*|\\$@|\\$i|\\*[a-zA-Z0-9.]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1351,7 +1351,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(pacsearch)\\s([a-zA-Z0-9-]*|\\$@|\\$i|\\*[a-zA-Z0-9.]+)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(pacsearch)\\s([a-zA-Z0-9-]*|\\$@|\\$i|\\*[a-zA-Z0-9.]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1363,7 +1363,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(sudo)\\s(pacsearch)\\s(-[a-zA-Z0-9-]+)\\s([a-zA-Z0-9-]*|\\$@|\\$i|\\*[a-zA-Z0-9.]+)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(sudo)\\s(pacsearch)\\s(-[a-zA-Z0-9-]+)\\s([a-zA-Z0-9-]*|\\$@|\\$i|\\*[a-zA-Z0-9.]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.extras.shell'
@@ -1379,7 +1379,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(sudo)\\s(pacsearch)\\s([a-zA-Z0-9-]*|\\$@|\\$i|\\*[a-zA-Z0-9.]+)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(sudo)\\s(pacsearch)\\s([a-zA-Z0-9-]*|\\$@|\\$i|\\*[a-zA-Z0-9.]+)'
         'beginCaptures':
           '1':
             'name': 'support.function.extras.shell'
@@ -1393,7 +1393,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(yaourt)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(yaourt)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1407,7 +1407,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(pacman)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(pacman)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.packages.shell'
@@ -1421,7 +1421,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(sudo)(pacman)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(sudo)(pacman)\\s(-[a-zA-Z0-9]+)\\s(--[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.extras.shell'
@@ -1439,7 +1439,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'begin': '(sudo)(pacman)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
+        'begin': '(?<![_/-/./\^/[a-zA-Z0-9]/])(sudo)(pacman)\\s(-[a-zA-Z0-9]+)\\s([a-zA-Z0-9-]*)'
         'beginCaptures':
           '1':
             'name': 'support.function.extras.shell'
@@ -1465,7 +1465,7 @@
         'name':  'support.function.extras.shell'
       }
       {
-        'match': '(?<![a-zA-Z0-9./]\\s)(?<!-[a-zA-Z0-9./]\\s)(?<![a-zA-Z0-9./])(?<!-[a-zA-Z0-9./])(?<![-/{/])(?<![-/{/}]\\s)(ar|bsdtar|bzcat|bzip2|gzip|lz4|lz4c|lzcat|lz4cat|lzma|p7zip|tar|unzip|unzzipcat|xz|xzcat|zcat)\\b(?![a-zA-Z0-9/-/_/\./])'
+        'match': '(?<![a-zA-Z0-9./]\\s)(?<!-[a-zA-Z0-9./]\\s)(?<![a-zA-Z0-9./])(?<!-[a-zA-Z0-9./])(?<![-/{/])(?<![-/{/}]\\s)(ar|bsdtar|bzcat|bzip2|gzip|lz4|lz4c|lzcat|lz4cat|lzma|p7zip|tar|unzip|unzzipcat|xz|xzcat|zcat)\\b(?![a-zA-Z0-9/-/_/./])'
         'name':  'support.function.archives.shell'
       }
       {
