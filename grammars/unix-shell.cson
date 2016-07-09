@@ -1457,7 +1457,7 @@
             'name': 'punctuation.definition.function.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9]/])(?:docker|find|g\+\+|gcc|grep|grub|make|mount|node|nodejs|packer|patch|perl|php|php5|php6|php7|python|python2|python3|python3.4|python3.5|python2.7|script/build|script/grunt|su|sudo|umount)\\b(?![-/./\'/\"/=/])'
+        'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9]/_/])(?:docker|find|g\+\+|gcc|grep|grub|make|mount|node|nodejs|packer|patch|perl|php|php5|php6|php7|python|python2|python3|python3.4|python3.5|python2.7|script/build|script/grunt|su|sudo|umount)\\b(?![-/./\'/\"/=/])'
         'name':  'support.function.extras.shell'
       }
       {
