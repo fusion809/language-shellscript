@@ -1042,6 +1042,18 @@
         'name':  'support.function.editors.shell'
       }
       {
+        'begin': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])((?<![a-zA-Z0-9_]\\s))(sudo)\\s(?:atom|atom-beta|atom-git|atom-bleeding|awk|brackets|code|code-git|code-oss|ed|emacs|gvim|komodo|lighttable|nano|pico|sed|vi|vim)\\b(?![-/./\'/\"/=/`/[a-zA-Z0-9_]/])'
+        'beginCaptures':
+          '1':
+            'name': 'support.function.extras.shell'
+          '2':
+            'name':  'support.function.editors.shell'
+        'end': '(\\||;|&|$)'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.function.shell'
+      }
+      {
         'match': '(?<![-/./\'/\"/=/:/[a-zA-Z0-9_]/])\\b(?:chsh|gpasswd|mkpasswd|passwd|useradd|usermod)\\b(?![-/./\'/\"/=/`/[a-zA-Z0-9_]/])'
         'name':  'support.function.users.shell'
       }
@@ -1058,7 +1070,7 @@
         'name':  'support.function.vcs.shell'
       }
       {
-        'match': '(?<![-/./\'/\"/=/@/[a-zA-Z0-9_]/])\\b(git)\\s(add|bisect|branch|checkout|clone|commit|diff|fetch|fork|grep|init|log|merge|mv|pull|push|rebase|release|remote|reset|rm|show|status|submodule|tag)\\b(?![-/./=/\'/\"/+/@/`/;/])'
+        'match': '(?<![-/./\'/\"/=/@/[a-zA-Z0-9_]/])\\b(git)\\s(add|bisect|branch|checkout|clone|commit|describe|diff|fetch|fork|grep|init|log|merge|mv|pull|push|rebase|release|remote|reset|rm|show|status|submodule|tag)\\b(?![-/./=/\'/\"/+/@/`/;/])'
         'name':  'support.function.vcs.shell'
       }
       {
