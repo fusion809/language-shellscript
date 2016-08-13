@@ -987,7 +987,7 @@
   'pipeline':
     'patterns': [
       {
-        'match': '\\b(time)\\b'
+        'match': '(<![-/[a-zA-Z0-9]/./])\\b(time)\\b(?![-/[a-zA-Z0-9]/./])'
         'name': 'keyword.other.shell'
       }
       {
