@@ -1,4 +1,4 @@
-# Shell script language support in Atom [![Build Status](https://travis-ci.org/fusion809/language-shellscript.svg?branch=master)](https://travis-ci.org/fusion809/language-shellscript)
+# Shell script language support in Atom
 
 <img src="http://i.imgur.com/lM2L75I.png"><caption><b>Figure 1: A PKGBUILD being syntax-highlighted with version v0.32.0 of this package, along with the dark-bint-syntax theme.</b></caption></img>
 
