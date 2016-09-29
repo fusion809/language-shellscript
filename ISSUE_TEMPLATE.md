@@ -1,6 +1,6 @@
 ### Prerequisites
 * Are you running the [latest version of Atom](https://github.com/atom/atom/releases/latest)? If not, please upgrade and see if your bug still exists.
-* Did you [search](https://github.com/issues?q=is%3Aissue+user%3Afusion809+-repo%3Aterminal-fusion) through the previously reported issues reported for this repository?
+* Did you [search](https://github.com/issues?q=is%3Aissue+user%3Afusion809+-repo%3Alanguage-shellscript) through the previously reported issues reported for this repository?
 
 ### Description
 
