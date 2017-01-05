@@ -17,4 +17,4 @@ in order to use it. It has a number of improvements over the original, namely:
 
 If you use this package it is recommended you use the [`dark-bint-syntax`](https://github.com/Murriouz/dark-bint-syntax) theme of Murriouz.
 
-Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, *etc.*
+Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, *etc.* [Here](https://discuss.atom.io/t/how-to-match-underscore-in-my-variable-definition-regex/37793) is a question on Atom Discuss relating to this package.

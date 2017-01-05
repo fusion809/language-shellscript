@@ -1141,7 +1141,7 @@
         'name': 'support.function.packages.shell'
       }
       {
-        'match': '(?<![\\-/\\./\'/\"/=/:/[a-zA-Z0-9]/_/])(?:docker|find|g\+\+|gcc|grep|grub|make|mount|node|nodejs|packer|patch|perl|php|php5|php6|php7|python|python2|python3|python3.4|python3.5|python2.7|script/build|script/grunt|strings|su|sudo|umount)\\b(?![\\-/\\./\'/\"/=/[a-zA-Z0-9_]/])'
+        'match': '(?<![\\-/\\./\'/\"/=/:/[a-zA-Z0-9]/_/])(?:cmake|docker|find|g\+\+|gcc|grep|grub|make|mount|node|nodejs|packer|patch|perl|php|php5|php6|php7|python|python2|python3|python3.4|python3.5|python2.7|script/build|script/grunt|strings|su|sudo|umount)\\b(?![\\-/\\./\'/\"/=/[a-zA-Z0-9_]/])'
         'name':  'support.function.extras.shell'
       }
       {
